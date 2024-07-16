@@ -86,6 +86,23 @@ public class SmartTv {
         return volumeTv;
     }
 
+    /**
+     * Este método é utilizado para selecionar o canal de acordo com o valor
+     * digitado para a Tv;
+     * <p>
+     * O método faz a leitura do valor informado na instanciação do método, e adiona
+     * a variavél canalTv, <b>desde que</b> o valor da variavél <b>canalTv</b>
+     * esteja entre 1 (um) e 100 (cem), ou seja, <b> > (maior) qu 1 (um) </b> e <b><
+     * (menor)</b> que <b>100 (cem)</b>, retorna o novo valor atualizado da
+     * variavél <b>canalTvTv</b>;
+     * 
+     * @param num     Recebe o valor inteiro do canal desejado;
+     * 
+     * @param canalTv Volume atual da tv;
+     * 
+     * @return Retorna o valor atualizado da variavél <b>volumeTv</b>
+     *
+     */
     public int CanalNumeral(int num) {
 
         if ((tvOnOff == true) && ((num >= 1) && (num <= 100))) {
@@ -105,7 +122,7 @@ public class SmartTv {
      * (menor)</b> que <b>100 (cem)</b>, <b>e</b> o valor da variavel tvOnOff seja
      * <b>true</b>, retorna o novo valor atualizado da variavél <b>canalTv</b>;
      * 
-     * @param canalTv Volume atual da tv;
+     * @param canalTv canal atual da tv;
      *
      * @param tvOnOff Valor da TV <b>Ligada</b> ou <b>Desligada</b>
      * 
@@ -131,7 +148,7 @@ public class SmartTv {
      * (maior)</b> que <b>1 (um)</b>, <b>e</b> o valor da variavel tvOnOff seja
      * <b>true</b>, retorna o novo valor atualizado da variavél <b>canalTv</b>;
      * 
-     * @param canalTv Volume atual da tv;
+     * @param canalTv Canal atual da tv;
      *
      * @param tvOnOff Valor da TV <b>Ligada</b> ou <b>Desligada</b>
      * 
@@ -148,6 +165,20 @@ public class SmartTv {
         return canalTv;
     }
 
+    /**
+     * Este método é utilizado para imprimir o <b>Status</b> atuallizado da <b>Smart
+     * Tv</b>
+     * 
+     * @param status   Recebe uma string com uma frase contendo os valores
+     *                 <b>tvOnOff</b>, <b>canalTv</b> e <b>volumeTv</b>;
+     * @param tvOnOff  Valor da TV <b>Ligada</b> ou <b>Desligada</b>;
+     * 
+     * @param canalTv  Canal atual da tv;
+     * 
+     * @param volumeTv Volume atual da tv;
+     * 
+     * @return Retorna o Status que se encontra a Smart Tv
+     */
     public String StatusTv() {
 
         String status = ("\nA tv está ligada? - " + tvOnOff + "\nA tv no canal ? - " + canalTv

@@ -19,9 +19,4 @@ public class TiposVariaveis {
         String texto = "Texto";
 
     }
-    String MostrarValores (){
-        String valor = "";
-        
-        return valor;
-    }
 }

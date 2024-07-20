@@ -61,7 +61,7 @@ public class VerificadorElegibilidadeConta {
  * 
  * @param idade Recebe uma Strig, e converte para um int
  */
-    private  static void verificarDadosDigitados(String idade){
+    private static void verificarDadosDigitados(String idade){
         
         int validacaoNumerica = Integer.parseInt(idade);
         if((validacaoNumerica <= 0)||(validacaoNumerica > 150)){

@@ -29,7 +29,7 @@ public class SmartTv {
      **/
     public boolean LigarTv() {
         boolean onOff;
-        onOff = (tvOnOff == false) ? true : false;
+        onOff = (tvOnOff == false);
         tvOnOff = onOff;
 
         return tvOnOff;

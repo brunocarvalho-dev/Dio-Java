@@ -1,5 +1,5 @@
 /**
- * <h1>MSN Messenger</h1>
+ * <h1>Instagram Messenger</h1>
  * Programa desenvolvido, para simular o <b>ABSTRAÇÃO</b> de um metodo
  * utilizando o <b>EXTENDS</b> para poder fazer uso dos metodos que se repentem
  * por todo o código, assim, evitando a criação de códigos repitidos, tornando o
@@ -17,25 +17,6 @@
  * @since Codigo para aprendizado da utilização de <b>Modificadores de
  *        Acesso</b>,
  *        programa Dio - java
- */
-public class MSNMessenger extends AplicativoMenssagem {
-    /*
-     * public void enviarMensagem() {
-     * validarConectadoInternet();
-     * System.out.println("Enviando Mensagem");
-     * salvarHistoricoMensagem();
-     * }
-     * 
-     * public void receberMensagem() {
-     * System.out.println("Recebendo Mensagem");
-     * }
-     * 
-     * private void validarConectadoInternet() {
-     * System.out.println("Validando se está conectado a internet");
-     * }
-     * 
-     * private void salvarHistoricoMensagem() {
-     * System.out.println("Salvando Histórico da mensagem");
-     * }
-     */
+ */public class InstagramMessenger extends AplicativoMenssagem{
+
 }

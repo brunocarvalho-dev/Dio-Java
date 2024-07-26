@@ -1,4 +1,4 @@
-package com.lanchonete.area;
+package com.lanchonete.area.cliente;
 
 /**
  * <h1>Cliente</h1>

@@ -1,3 +1,4 @@
+package Apps;
 /**
  * <h1>MSN Messenger</h1>
  * Programa desenvolvido, para simular o <b>ABSTRAÇÃO</b> de um metodo
@@ -19,6 +20,23 @@
  *        programa Dio - java
  */
 public class MSNMessenger extends AplicativoMenssagem {
+    
+    @Override
+    public void enviarMensagem() {
+        validarConectadoInternet();
+        System.out.println("\nEnviando mensagempelo MSN Messenger");
+        
+    }
+    @Override
+    public void receberMensagem() {
+        System.out.println("Recebendo mensagem pelo MSN Messenger\n");
+        salvarHistoricoMensagem();
+    }
+    
+    private void salvarHistoricoMensagem() {
+        System.out.println("Salvando mensagem no MSN Messenger");
+
+    }
     /*
      * public void enviarMensagem() {
      * validarConectadoInternet();

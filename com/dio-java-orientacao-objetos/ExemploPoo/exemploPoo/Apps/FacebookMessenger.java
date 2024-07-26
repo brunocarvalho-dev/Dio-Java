@@ -1,3 +1,4 @@
+package Apps;
 /**
  * <h1>Facebook Messenger</h1>
  * Programa desenvolvido, para simular o <b>ABSTRAÇÃO</b> de um metodo
@@ -19,4 +20,21 @@
  *        programa Dio - java
  */public class FacebookMessenger extends AplicativoMenssagem {
 
+    @Override
+    public void enviarMensagem() {
+        validarConectadoInternet();
+        System.out.println("\nEnviando mensagem pelo Facebook");
+        
+    }
+    @Override
+    public void receberMensagem() {
+        System.out.println("Recebendo mensagem pelo Facebook\n");
+        salvarHistoricoMensagem();
+
+    }
+    
+    private void salvarHistoricoMensagem() {
+        System.out.println("Salvando mensagem no Facebook");
+    }
+    
 }

@@ -1,3 +1,7 @@
+import Apps.FacebookMessenger;
+import Apps.InstagramMessenger;
+import Apps.MSNMessenger;
+
 /**
  * <h1>Computador Pedrinho</h1>
  * Programa desenvolvido, para utilização dos metódos de <b>ABSTRAÇÃO</b>, onde um metodo
@@ -22,21 +26,22 @@
 public class ComputadorPedrinho {
     public static void main(String[] args) {
         MSNMessenger msn = new MSNMessenger();
-        System.out.println("MSN Messenger\n");
+        System.out.println("MSN Messenger------------\n");
         
         msn.enviarMensagem();
         msn.receberMensagem();
 
         FacebookMessenger faceMsg = new FacebookMessenger();
-        System.out.println("\nFacebook Messenger\n");
+        System.out.println("\nFacebook Messenger----------------\n");
 
         faceMsg.enviarMensagem();
         faceMsg.receberMensagem();
 
         InstagramMessenger instaMsg = new InstagramMessenger();
-        System.out.println("\nInstagram Messenger\n");
+        System.out.println("\nInstagram Messenger----------------------\n");
 
         instaMsg.enviarMensagem();
         instaMsg.receberMensagem();
+
     }
 }

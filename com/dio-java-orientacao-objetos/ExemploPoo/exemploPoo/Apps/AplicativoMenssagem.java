@@ -1,3 +1,4 @@
+package Apps;
 /**
  * <h1>plicativo Messenger</h1>
  * Programa desenvolvido, para simular o <b>ENCAPSULAMENTO</b> e <b>ABSTRAÇÃO</b> para manter o sistema mais protegido;
@@ -27,6 +28,18 @@
  *        programa Dio - java
  */
 public abstract class AplicativoMenssagem {
+
+    //Métodos Abstratos
+    public abstract void enviarMensagem();
+    public abstract void receberMensagem();
+
+    //Somente os filhos conhecem este método
+    protected void validarConectadoInternet() {
+        System.out.println("Validando se está conectado a internet");
+    }
+
+
+    /*
     public void enviarMensagem() {
         validarConectadoInternet();
         System.out.println("Enviando Mensagem");
@@ -37,11 +50,13 @@ public abstract class AplicativoMenssagem {
         System.out.println("Recebendo Mensagem");
     }
 
-    private  void validarConectadoInternet() {
-        System.out.println("Validando se está conectado a internet");
-    }
-
-    private void salvarHistoricoMensagem() {
+        private void salvarHistoricoMensagem() {
         System.out.println("Salvando Histórico da mensagem");
     }
+    public void validarConectadoInternet() {
+        System.out.println("Validando se está conectado a internet");
+    }
+    */
+    
+
 }

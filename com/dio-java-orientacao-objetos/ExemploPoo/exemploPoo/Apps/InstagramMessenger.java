@@ -1,3 +1,4 @@
+package Apps;
 /**
  * <h1>Instagram Messenger</h1>
  * Programa desenvolvido, para simular o <b>ABSTRAÇÃO</b> de um metodo
@@ -18,5 +19,18 @@
  *        Acesso</b>,
  *        programa Dio - java
  */public class InstagramMessenger extends AplicativoMenssagem{
+    @Override
+    public void enviarMensagem() {
+        validarConectadoInternet();
+        System.out.println("\nEnviando mensagem pelo Instagram");
+    }
+    @Override
+    public void receberMensagem() {
+        System.out.println("Recebendo mensagem pelo Instagram\n");
+        salvarHistoricoMensagem();
+    }
 
+    private void salvarHistoricoMensagem() {
+        System.out.println("Salvando mensagem no Instagram");
+    }
 }

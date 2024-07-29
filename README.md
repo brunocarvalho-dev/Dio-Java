@@ -30,7 +30,7 @@ Este documento oferece uma visão geral dos principais pilares da POO em Java: H
 
 ## [Pilares da Programação Orientada a Objetos](com/dio-java-orientacao-objetos)
 
-### 1. [Herança](com/dio-java-orientacao-objetos/ExemploPooAbstracaoPolimorfismo)
+### 1. [Herança](com\dio-java-orientacao-objetos\ExemploPoo\ExemploPooAbstracaoPolimorfismo)
 
 Herança é o mecanismo pelo qual uma classe pode herdar características (atributos e métodos) de outra classe. A classe que herda é chamada de subclasse (ou classe derivada), enquanto a classe de onde se herda é chamada de superclasse (ou classe base).
 
@@ -55,7 +55,7 @@ public class Cachorro extends Animal {
 }
 ```
 
-### 2. [Polimorfismo](com/dio-java-orientacao-objetos/ExemploPooAbstracaoPolimorfismo)
+### 2. [Polimorfismo](com\dio-java-orientacao-objetos\ExemploPoo\ExemploPooAbstracaoPolimorfismo)
 
 Polimorfismo permite que objetos de diferentes classes sejam tratados como objetos de uma classe comum. Existem dois tipos principais de polimorfismo: polimorfismo de sobrecarga e polimorfismo de sobrescrita.
 
@@ -95,7 +95,7 @@ public class Cachorro extends Animal {
 }
 ```
 
-### 3. [Abstração](com/dio-java-orientacao-objetos/ExemploPooAbstracaoPolimorfismo)
+### 3. [Abstração](com\dio-java-orientacao-objetos\ExemploPoo\ExemploPooAbstracaoPolimorfismo)
 
 Abstração é o processo de ocultar detalhes complexos de implementação e mostrar apenas as funcionalidades essenciais. Em Java, a abstração é alcançada usando classes abstratas e interfaces.
 
@@ -111,7 +111,7 @@ public abstract class Forma {
 }
 ```
 
-### 4. [Interfaces](com/dio-java-orientacao-objetos/ExemploPoo/ExemploPooInterfaces)
+### 4. [Interfaces](com/dio-java-orientacao-objetos/ExemploPoo/ExemploPooInterface)
 
 Interfaces são contratos que definem métodos que uma classe deve implementar. Diferente de classes abstratas, uma interface não pode conter nenhum código de implementação, apenas a assinatura dos métodos.
 

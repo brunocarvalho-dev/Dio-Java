@@ -1,6 +1,9 @@
 package edu.iphone.aparelhos;
 
+import java.util.ArrayList;
+
 import edu.iphone.agenda.AgendaTelefonica;
+import edu.iphone.agenda.Contato;
 import edu.iphone.navegadorInternet.Navegador;
 import edu.iphone.reprodutorMusical.Ipode;
 import edu.iphone.telefone.AparelhoTelefonico;
@@ -26,7 +29,8 @@ import edu.iphone.telefone.AparelhoTelefonico;
  *        <b>Abstração</b> e <b>Polimorfismo</b>
  *        programa Dio - java
  */
-public class Iphone implements Navegador, Ipode, AparelhoTelefonico, AgendaTelefonica {
+public class IphoneFuncionalidade implements Navegador, Ipode, AparelhoTelefonico, AgendaTelefonica {
+    Lista<Contato> contatos = new ArrayList<>();
     // navegador
 
     @Override
@@ -88,8 +92,9 @@ public class Iphone implements Navegador, Ipode, AparelhoTelefonico, AgendaTelef
     @Override
     public void buscarContatoLigando(String nome) {
         String Telefone = "Buscando Telefone do Contato: " + nome;
+        
         Telefone = "11987654320";
-        ligar(Telefone);
+        ligar(contatos.get(nome));
 
     }
 
@@ -108,6 +113,7 @@ public class Iphone implements Navegador, Ipode, AparelhoTelefonico, AgendaTelef
 
     @Override
     public void salvarContato(String nome, String telefone) {
+        contatos.add(nome, telefone);
         System.out.println("Salvando contato na função agenda do Iphone");
     }
 

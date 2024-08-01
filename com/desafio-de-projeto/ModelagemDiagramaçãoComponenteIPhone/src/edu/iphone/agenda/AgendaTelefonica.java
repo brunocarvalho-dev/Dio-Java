@@ -17,6 +17,7 @@ package edu.iphone.agenda;
  *        programa Dio - java
  */
 public interface AgendaTelefonica {
+
     public void salvarContato(String nome, String telefone);
 
     public void buscarcontato(String nome);
@@ -24,4 +25,6 @@ public interface AgendaTelefonica {
     public void editarContato();
 
     public void apagarContato();
+
+    public void listarContato();
 }

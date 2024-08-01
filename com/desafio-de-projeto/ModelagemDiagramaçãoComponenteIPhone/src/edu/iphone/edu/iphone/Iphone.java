@@ -1,11 +1,5 @@
 package edu.iphone;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import edu.iphone.agenda.AgendaTelefonica;
 import edu.iphone.aparelhos.IphoneFuncionalidade;
 
 public class Iphone {

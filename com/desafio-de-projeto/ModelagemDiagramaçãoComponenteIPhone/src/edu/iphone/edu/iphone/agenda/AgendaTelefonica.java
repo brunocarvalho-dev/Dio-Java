@@ -25,6 +25,4 @@ public interface AgendaTelefonica {
     public void editarContato();
 
     public void apagarContato();
-
-    public void listarContato();
 }

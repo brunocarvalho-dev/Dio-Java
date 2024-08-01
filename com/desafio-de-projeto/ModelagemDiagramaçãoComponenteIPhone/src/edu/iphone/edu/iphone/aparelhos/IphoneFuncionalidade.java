@@ -1,9 +1,6 @@
 package edu.iphone.aparelhos;
 
-import java.util.ArrayList;
-
 import edu.iphone.agenda.AgendaTelefonica;
-import edu.iphone.agenda.Contato;
 import edu.iphone.navegadorInternet.Navegador;
 import edu.iphone.reprodutorMusical.Ipode;
 import edu.iphone.telefone.AparelhoTelefonico;
@@ -29,8 +26,9 @@ import edu.iphone.telefone.AparelhoTelefonico;
  *        <b>Abstração</b> e <b>Polimorfismo</b>
  *        programa Dio - java
  */
+
 public class IphoneFuncionalidade implements Navegador, Ipode, AparelhoTelefonico, AgendaTelefonica {
-    Lista<Contato> contatos = new ArrayList<>();
+
     // navegador
 
     @Override
@@ -61,7 +59,7 @@ public class IphoneFuncionalidade implements Navegador, Ipode, AparelhoTelefonic
 
     @Override
     public void selecionarMusica(String musica) {
-        System.out.println("Selecionando música no Iphone");
+        System.out.println("Selecionando música no Iphone: " + musica);
 
     }
 
@@ -85,16 +83,15 @@ public class IphoneFuncionalidade implements Navegador, Ipode, AparelhoTelefonic
 
     @Override
     public void ligar(String numero) {
-        System.out.println("Fazendo uma ligação na função telefone do Iphone para o número: " + numero);
+        System.out.println("Fazendo uma ligação na função telefone do Iphone para: " + numero);
 
     }
 
     @Override
     public void buscarContatoLigando(String nome) {
-        String Telefone = "Buscando Telefone do Contato: " + nome;
-        
-        Telefone = "11987654320";
-        ligar(contatos.get(nome));
+        System.out.println("Buscando Telefone do Contato: " + nome);
+        String Telefone = (nome + "11999999999"); 
+        ligar(Telefone);
 
     }
 
@@ -113,15 +110,18 @@ public class IphoneFuncionalidade implements Navegador, Ipode, AparelhoTelefonic
 
     @Override
     public void salvarContato(String nome, String telefone) {
-        contatos.add(nome, telefone);
-        System.out.println("Salvando contato na função agenda do Iphone");
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Salvando contato na função agenda do Iphone\nNome: ");
+        stringBuilder.append(nome);
+        stringBuilder.append("\nTelefone: ");
+        stringBuilder.append(telefone);
+        System.out.println(stringBuilder.toString());
     }
 
     @Override
     public void buscarcontato(String nome) {
-        String Telefone = "Buscando Telefone do Contato: " + nome;
-        System.out.println(Telefone);
 
+        System.out.println("Buscando Telefone do Contato: " + nome);
     }
 
 }

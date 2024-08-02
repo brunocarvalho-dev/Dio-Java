@@ -89,7 +89,7 @@ public class IphoneFuncionalidade implements Navegador, Ipode, AparelhoTelefonic
 
     @Override
     public void buscarContatoLigando(String nome) {
-        System.out.println("Buscando Telefone do Contato: " + nome);
+        System.out.println("Buscando Telefone do Contato: " + nome + "\n");
         String Telefone = (nome + "11999999999"); 
         ligar(Telefone);
 

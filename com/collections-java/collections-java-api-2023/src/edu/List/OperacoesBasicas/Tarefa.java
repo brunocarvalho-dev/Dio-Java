@@ -1,5 +1,12 @@
 package edu.List.OperacoesBasicas;
 
+/**
+ * <h1>Tarefa</h1>
+ * @author Bruno Carvalho
+ * @version 1.0
+ * @since Programa desenvolvido de forma didática para
+ * desenvolver a utilização das <b>COLLECTIONS</b>, foi desenvolvido a Collection <b>LIST</b>;
+ */
 public class Tarefa {
     private String descricao;
 

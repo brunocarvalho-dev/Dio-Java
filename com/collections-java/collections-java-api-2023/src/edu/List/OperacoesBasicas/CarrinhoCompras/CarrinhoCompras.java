@@ -10,11 +10,12 @@ public class CarrinhoCompras {
         this.listaItem = new ArrayList<>();
     }
 
-    // Removendo item carrinho
+    // Adicionando item carrinho
     public void adicionarItem(String nome, double valor, int qtd) {
         listaItem.add(new Item(nome, valor, qtd));
     }
 
+    // Removendo item carrinho
     public void removerItem(String nome) {
         List<Item> itemRemoverCarrinho = new ArrayList<>();
         for (Item i : listaItem) {
@@ -25,6 +26,7 @@ public class CarrinhoCompras {
         listaItem.removeAll(itemRemoverCarrinho);
     }
 
+    // Calculando valor total
     public void calcularValorTotal() {
         int i = 0, qtd = 0;
         double total = 0, valor = 0;
@@ -40,6 +42,21 @@ public class CarrinhoCompras {
         }
     }
 
+    // Mostrar item no carrinho
+    public void mostrarItem() {
+        if (!listaItem.isEmpty()) {
+            for (Item item : listaItem) {
+                System.out
+                        .println(String.format("Nome: " + item.getNome() + "\n Valor: R$ %.2f - QTD: " + item.getQtde(),
+                                item.getValor()));
+                System.out.println("-------------------------------------");
+
+            }
+        } else {
+            System.out.println("O carrinho vazio!");
+        }
+    }
+
     public static void main(String[] args) {
         CarrinhoCompras compras = new CarrinhoCompras();
 
@@ -48,7 +65,7 @@ public class CarrinhoCompras {
         compras.adicionarItem("pão", 1.05, 20);
         compras.adicionarItem("frios", 4.99, 5);
 
-        // compras.mostrarItaem();
+        compras.mostrarItem();
         compras.calcularValorTotal();
 
     }

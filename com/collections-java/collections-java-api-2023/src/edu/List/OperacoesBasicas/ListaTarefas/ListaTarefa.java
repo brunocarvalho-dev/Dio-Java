@@ -1,4 +1,4 @@
-package edu.List.OperacoesBasicas;
+package edu.List.OperacoesBasicas.ListaTarefas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,11 +6,13 @@ import java.util.List;
 /**
  * <h1>ListaTarefa</h1>
  * <p>
- * Classe desenvolvida para fins didáticos, aprendendo a utilizar as <b>COLLECTIONS</b>;
+ * Classe desenvolvida para fins didáticos, aprendendo a utilizar as
+ * <b>COLLECTIONS</b>;
  * </p>
  * <p>
  * Foi criada uma classe para se trabalhar com a <b>LIST</b>,
- * já que para utilizar é preciso um <b>OBJECT</b>, como Object foi utilizada a classe<b>TAREFA</b>;
+ * já que para utilizar é preciso um <b>OBJECT</b>, como Object foi utilizada a
+ * classe<b>TAREFA</b>;
  * </p>
  *
  * @author Bruno Carvalho
@@ -20,34 +22,34 @@ import java.util.List;
 public class ListaTarefa {
     private List<Tarefa> tarefaList;
 
-    public ListaTarefa() {
+    public ListaTarefa1() {
         this.tarefaList = new ArrayList<>();
     }
 
-    public void adicionarTarefa(String descricao){
+    public void adicionarTarefa(String descricao) {
         tarefaList.add(new Tarefa(descricao));
     }
 
-    public void removerTarefa(String descricao){
+    public void removerTarefa(String descricao) {
         List<Tarefa> tarefaParaRemover = new ArrayList<>();
-        for(Tarefa t : tarefaList){
-            if(t.getDescricao().equalsIgnoreCase(descricao)){
+        for (Tarefa t : tarefaList) {
+            if (t.getDescricao().equalsIgnoreCase(descricao)) {
                 tarefaParaRemover.add(t);
             }
         }
         tarefaList.removeAll(tarefaParaRemover);
     }
 
-    public int obterNumeroTotalTarefas(){
+    public int obterNumeroTotalTarefas() {
         return tarefaList.size();
     }
 
-    public void obterDescricoesTarefas(){
+    public void obterDescricoesTarefas() {
         System.out.println(tarefaList);
     }
 
     public static void main(String[] args) {
-        ListaTarefa tarefaLista = new ListaTarefa();
+        ListaTarefa1 tarefaLista = new ListaTarefa1();
 
         System.out.println("O número total de elementos na listá é : " + tarefaLista.obterNumeroTotalTarefas());
 

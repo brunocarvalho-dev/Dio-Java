@@ -68,5 +68,10 @@ public class CarrinhoCompras {
         compras.mostrarItem();
         compras.calcularValorTotal();
 
+        compras.removerItem("frios");
+        
+        compras.mostrarItem();
+        compras.calcularValorTotal();
+
     }
 }

@@ -45,7 +45,7 @@ public class ConjuntoConvidado {
         convidado.AdicionarConvidadoPorConvite("Jose Ramalho", 6);
         convidado.AdicionarConvidadoPorConvite("Rick Martin", 7);
         convidado.AdicionarConvidadoPorConvite("Steve Jobs", 8);
-        convidado.AdicionarConvidadoPorConvite("Bruce Winne", 9);
+        convidado.AdicionarConvidadoPorConvite("Bruce Winne", 8);
         convidado.AdicionarConvidadoPorConvite("Bruce Lee", 10);
 
         convidado.ExibirConvidados();

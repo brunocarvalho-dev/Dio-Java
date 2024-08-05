@@ -1,4 +1,4 @@
-package edu.Set.OperacoesBasicas.Pesquisa.ListaContato;
+package edu.Set.Pesquisa.ListaContato;
 
 import java.util.Objects;
 

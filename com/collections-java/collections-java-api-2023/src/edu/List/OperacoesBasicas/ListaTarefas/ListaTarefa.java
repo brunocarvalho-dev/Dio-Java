@@ -22,7 +22,7 @@ import java.util.List;
 public class ListaTarefa {
     private List<Tarefa> tarefaList;
 
-    public ListaTarefa1() {
+    public ListaTarefa() {
         this.tarefaList = new ArrayList<>();
     }
 
@@ -49,7 +49,7 @@ public class ListaTarefa {
     }
 
     public static void main(String[] args) {
-        ListaTarefa1 tarefaLista = new ListaTarefa1();
+        ListaTarefa tarefaLista = new ListaTarefa();
 
         System.out.println("O número total de elementos na listá é : " + tarefaLista.obterNumeroTotalTarefas());
 

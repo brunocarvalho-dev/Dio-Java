@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e9f084b-5ea5-49ee-866d-cf96a35976df" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/com/collections-java/collections-java-api-2023/src/edu/List/OperacoesBasicas/CarrinhoCompras/CarrinhoCompras.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/collections-java/collections-java-api-2023/src/edu/List/OperacoesBasicas/CarrinhoCompras/CarrinhoCompras.java" afterDir="false" />
-    </list>
+    <list default="true" id="0e9f084b-5ea5-49ee-866d-cf96a35976df" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +27,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Documents/Projetos.Dio/JavaSpringAI/Dio-Java/com/collections-java/collections-java-api-2023"
+    "last_opened_file_path": "C:/Users/User/Documents/Projetos.Dio/JavaSpringAI/Dio-Java/com/collections-java"
   }
 }]]></component>
   <component name="SharedIndexes">

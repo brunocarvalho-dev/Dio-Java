@@ -14,7 +14,7 @@ public class AgendaContatos {
         try {
             contatoSet.add(new Contato(nome, numero));
         } catch (Exception e) {
-            System.out.println("Contato não adicionado\n" + e);
+            System.out.println("AgendaContato não adicionado\n" + e);
         }
     }
 
@@ -30,7 +30,7 @@ public class AgendaContatos {
             }
         }
         if (contatosPorNome.isEmpty()) {
-            System.out.println("Contato " + nome + " não encontrado");
+            System.out.println("AgendaContato " + nome + " não encontrado");
         }
         return contatosPorNome;
     }
@@ -41,12 +41,12 @@ public class AgendaContatos {
             if (c.getNome().equalsIgnoreCase(nome)) {
                 c.setNumero(numero);
                 contatoAtualizado = c;
-                System.out.println("\nContato Atualizado: " + contatoAtualizado);
+                System.out.println("\nAgendaContato Atualizado: " + contatoAtualizado);
                 break;
             }
         }
         if (contatoAtualizado == null) {
-            System.out.println("Contato não encontrado");
+            System.out.println("AgendaContato não encontrado");
         }
         return contatoAtualizado;
     }

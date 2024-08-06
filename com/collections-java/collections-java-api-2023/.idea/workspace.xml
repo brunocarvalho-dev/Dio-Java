@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="218fc639-e0f0-4812-ae65-c162b945507a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/edu/List/OperacoesBasicas/CarrinhoCompras/CarrinhoCompras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/List/OperacoesBasicas/CarrinhoCompras/CarrinhoCompras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/Map/OperacoesBasicas/AgendaContatos/AgendaContato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/Map/Pesquisa/EstoqueProdutos/EstoqueProdutos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/Map/Pesquisa/EstoqueProdutos/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/Set/Pesquisa/ListaContato/AgendaContatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/Set/Pesquisa/ListaContato/AgendaContatos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +39,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.AgendaContato.executor": "Run",
     "Application.CatalogoLivros.executor": "Run",
+    "Application.EstoqueProdutos.executor": "Run",
     "Application.ListaTarefa.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.edu.List.Pesquisa.Livros.CatalogoLivros.executor": "Run",
@@ -53,13 +61,39 @@
       <recent name="edu" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CatalogoLivros">
+  <component name="RunManager" selected="Application.EstoqueProdutos">
+    <configuration name="AgendaContato" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.Map.OperacoesBasicas.AgendaContatos.AgendaContato" />
+      <module name="collections-java-api-2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.Map.OperacoesBasicas.AgendaContatos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CatalogoLivros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.List.Ordenacao.Livros.CatalogoLivros" />
       <module name="collections-java-api-2023" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.List.Ordenacao.Livros.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EstoqueProdutos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.Map.Pesquisa.EstoqueProdutos.EstoqueProdutos" />
+      <module name="collections-java-api-2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.Map.Pesquisa.EstoqueProdutos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,13 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="collections-java-api-2023" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="edu.List.Pesquisa.Livros.CatalogoLivros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.List.Pesquisa.Livros.CatalogoLivros" />
       <module name="collections-java-api-2023" />
@@ -102,10 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EstoqueProdutos" />
+        <item itemvalue="Application.AgendaContato" />
         <item itemvalue="Application.CatalogoLivros" />
         <item itemvalue="Application.edu.List.Pesquisa.Livros.CatalogoLivros" />
         <item itemvalue="Application.ListaTarefa" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

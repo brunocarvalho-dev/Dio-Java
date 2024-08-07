@@ -58,12 +58,12 @@ public class EstoqueProdutos {
         return produtoMaisBarato;
     }
 
-    public Produto ObterProdutoMaiorValorPorQuantidadeEmEstoque(){
+    public Produto ObterProdutoMaiorValorPorQuantidadeEmEstoque() {
         Produto produtoMaiorValorEmEstoque = null;
         double maiorValor = Double.MIN_VALUE;
-        for (Produto produto: estoqueProdutosMap.values()){
-            double valorDoEstoque = (produto.getPreco()* produto.getQuantidade());
-            if (valorDoEstoque >maiorValor){
+        for (Produto produto : estoqueProdutosMap.values()) {
+            double valorDoEstoque = (produto.getPreco() * produto.getQuantidade());
+            if (valorDoEstoque > maiorValor) {
                 produtoMaiorValorEmEstoque = produto;
                 maiorValor = valorDoEstoque;
             }
@@ -71,33 +71,22 @@ public class EstoqueProdutos {
         return produtoMaiorValorEmEstoque;
 
     }
-//verificar codigo remover produto
-    public void RemoverProdutoPorCodigo(long codigoProduto) {
-        try {
-            estoqueProdutosMap.remove(codigoProduto);
-            System.out.println("Produto: " + estoqueProdutosMap.get(codigoProduto).getNome() + "\ncodigo: " + codigoProduto +" Removido com sucesso!");
-        }catch (Exception e){
-            System.out.println("Código do Produto inválido\n" + e);
-        }
-    }
+
 
     public static void main(String[] args) {
         EstoqueProdutos estoqueProdutos = new EstoqueProdutos();
 
         estoqueProdutos.ExibirProduto();
 
-        estoqueProdutos.AdicionarProduto(1234L,"Produto 1", 30, 6.99);
-        estoqueProdutos.AdicionarProduto(2345L,"Produto 2", 40, 16.99);
+        estoqueProdutos.AdicionarProduto(1234L, "Produto 1", 30, 6.99);
+        estoqueProdutos.AdicionarProduto(2345L, "Produto 2", 40, 16.99);
      /*   estoqueProdutos.AdicionarProduto(3456L,"Produto 3", 20, 24.99);
         estoqueProdutos.AdicionarProduto(4567L,"Produto 4", 15, 9.99);
         estoqueProdutos.AdicionarProduto(5678L,"Produto 5", 10, 11.99);
         estoqueProdutos.AdicionarProduto(6789L,"Produto 6", 25, 13.99);
         estoqueProdutos.AdicionarProduto(7890L,"Produto 7", 60, 4.99);
-     */   estoqueProdutos.AdicionarProduto(8901L,"Produto 8", 75, 6.99);
-
-        estoqueProdutos.ExibirProduto();
-
-        estoqueProdutos.RemoverProdutoPorCodigo(1234);
+     */
+        estoqueProdutos.AdicionarProduto(8901L, "Produto 8", 75, 6.99);
 
         estoqueProdutos.ExibirProduto();
 

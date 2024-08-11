@@ -1,32 +1,31 @@
-public class Conta {
+package Contas;
+
+abstract class Conta {
     private int agencia;
-    private int numeroConta;
+    private int contaNumero;
     private double saldo;
 
-    public Conta(int agencia, int numeroConta, double saldo) {
+    public Conta(int agencia, int contaNumero, double saldo) {
         this.agencia = agencia;
-        this.numeroConta = numeroConta;
+        this.contaNumero = contaNumero;
         this.saldo = saldo;
     }
 
-    public int getAgencia() {
-        return agencia;
-    }
+    public void depositar();
 
-    public int getNumeroConta() {
-        return numeroConta;
-    }
+    public void sacar();
 
-    public double getSaldo() {
+    public void tranferir();
+
+    public void pix()
+            ;
+
+    public double consultaSaldo(){
         return saldo;
-    }
+    };
 
-    public void depositar(double saldo) {
-        this.saldo += saldo;
+    @java.lang.Override
+    public String toString() {
+        return String.format("Saldo Atual => R$ %.2f",saldo);
     }
-    public void sacar(double saldo) {
-        this.saldo -= saldo;
-    }
-
-
 }

@@ -1,2 +1,5 @@
-package Contas;public class ContaCorrente {
+package Contas;
+
+public class ContaCorrente extends Conta{
+
 }

@@ -1,31 +1,14 @@
 package Contas;
 
-abstract class Conta {
-    private int agencia;
-    private int contaNumero;
-    private double saldo;
+public interface IConta {
 
-    public Conta(int agencia, int contaNumero, double saldo) {
-        this.agencia = agencia;
-        this.contaNumero = contaNumero;
-        this.saldo = saldo;
-    }
+    void depositar(double valor);
 
-    public void depositar();
+    void sacar(double valor);
 
-    public void sacar();
+    void tranferir(Conta contaDestino, double valor);
 
-    public void tranferir();
+    void pix(Conta contaDestino, double valor);
 
-    public void pix()
-            ;
-
-    public double consultaSaldo(){
-        return saldo;
-    };
-
-    @java.lang.Override
-    public String toString() {
-        return String.format("Saldo Atual => R$ %.2f",saldo);
-    }
+    String consultaSaldo();
 }

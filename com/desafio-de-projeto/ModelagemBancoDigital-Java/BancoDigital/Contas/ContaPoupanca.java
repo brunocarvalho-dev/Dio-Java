@@ -1,6 +1,12 @@
 package Contas;
 
+import Pessoas.Pessoa;
+
 public class ContaPoupanca extends Conta{
+
+    public ContaPoupanca(Pessoa cliente) {
+        super(cliente);
+    }
 
     @Override
     public void depositar(double valor) {
@@ -23,12 +29,18 @@ public class ContaPoupanca extends Conta{
     }
 
     @Override
-    public String consultaSaldo() {
-        return super.consultaSaldo();
+    public void consultaSaldo() {
+        super.consultaSaldo();
     }
 
     @Override
     public boolean saldoDisponivel(double valor) {
         return super.saldoDisponivel(valor);
+    }
+
+    @Override
+    public void extrato() {
+        System.out.println("\n\n**********Extrato Conta Poupança ***********");
+        super.extrato();
     }
 }

@@ -10,5 +10,7 @@ public interface IConta {
 
     void pix(Conta contaDestino, double valor);
 
-    String consultaSaldo();
+    void consultaSaldo();
+
+    void extrato();
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContaBanco-DesafioJava/ContaBanco-DesafioJava.iml" filepath="$PROJECT_DIR$/ContaBanco-DesafioJava/ContaBanco-DesafioJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dio-java-basico.iml" filepath="$PROJECT_DIR$/dio-java-basico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tipos-e-variaveis/tipos-e-variaveis.iml" filepath="$PROJECT_DIR$/tipos-e-variaveis/tipos-e-variaveis.iml" />
+    </modules>
+  </component>
+</project>

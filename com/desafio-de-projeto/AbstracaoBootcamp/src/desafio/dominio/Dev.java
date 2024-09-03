@@ -28,9 +28,9 @@ public class Dev {
 
     }
     public double calcularTotalXp() {
-        return this.conteudoIncritos.stream() //seleciona todos os conteudo do "conteudoInscritos"
+        return this.conteudoConcluido.stream() //seleciona todos os conteudo do "conteudoInscritos"
                 .mapToDouble //passa por cada item no "conteudoInscritos" para fazer a função abaixo
-                        (Conteudo::calcularXp) /* <- função que o map vai realizar
+                        (Conteudo::calcularXp) /* <- função que o map vai realizar (conteudo -> conteudo.calcularXp())
                                                                 pegar o xp de cada "conteudoInscritos" e adicionar
                                                                   na variavl "conteudo" e realizar a proxima função*/
                 .sum(); // Função Somar

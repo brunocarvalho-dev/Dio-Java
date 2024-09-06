@@ -1,5 +1,14 @@
 package desafio.dominio;
 
+/**
+ * <h1>Curso</h1>
+ * <p>
+ *     Classe desenvolvida para criação dos cursos do BootCamp;
+ * </p>
+ * @author Bruno Carvalho
+ * @since 06/09/2024
+ * @version 1.0
+ */
 public class Curso extends Conteudo{
 
     private int cargaHoraria;

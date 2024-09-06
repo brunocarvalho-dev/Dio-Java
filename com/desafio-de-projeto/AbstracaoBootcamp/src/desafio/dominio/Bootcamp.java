@@ -5,7 +5,16 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
-
+/**
+ * <h1>BootCamp</h1>
+ * <p>
+ *     Classe desenvolvida para criação do BootCamp,
+ *     onde recebe os cursos que farão parte do bootcamp inscrito pelo DEV;
+ * </p>
+ * @author Bruno Carvalho
+ * @since 06/09/2024
+ * @version 1.0
+ */
 public class Bootcamp {
     //Atributos
     private String nome;
